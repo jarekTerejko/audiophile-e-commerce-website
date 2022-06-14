@@ -488,5 +488,16 @@
         }
       }
     ]
+  },
+  {
+    "hero": {
+      "heading": "XX99 mark II headphones",
+      "description": "Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.",
+      "images": {
+        "mobile": "./assets/home/mobile/image-hero.jpg",
+        "tablet": "./assets/home/tablet/image-hero.jpg",
+        "desktop": "./assets/home/desktop/image-hero.jpg"
+      }
+    }
   }
 ]
