@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HeroWrapper = styled.header`
   margin-top: -9.7rem;
   background: var(--color-dark);
+  margin-bottom: 20rem;
 `;
 
 export const HeroBg = styled.div`
@@ -17,8 +18,6 @@ export const HeroBg = styled.div`
 `;
 
 export const HeroContent = styled.div`
-   padding-top: 22.5rem;
-   max-width: 50rem;
+  padding-top: 22.5rem;
+  max-width: 50rem;
 `;
-export const HeroColLeft = styled.div``;
-export const HeroColRight = styled.div``;

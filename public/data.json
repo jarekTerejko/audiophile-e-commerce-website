@@ -499,5 +499,12 @@
         "desktop": "./assets/home/desktop/image-hero.jpg"
       }
     }
+  },
+  {
+    "categories": [
+      { "name": "headphones", "img": "./assets/shared/image-headphones.png", "className": "categories-img headphones" },
+      { "name": "speakers", "img": "./assets/shared/image-speakers.png", "className": "categories-img speakers" },
+      { "name": "earphones", "img": "./assets/shared/image-earphones.png", "className": "categories-img earphones" }
+    ]
   }
 ]
