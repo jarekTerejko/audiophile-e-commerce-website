@@ -502,9 +502,55 @@
   },
   {
     "categories": [
-      { "name": "headphones", "img": "./assets/shared/image-headphones.png", "className": "categories-img headphones" },
-      { "name": "speakers", "img": "./assets/shared/image-speakers.png", "className": "categories-img speakers" },
-      { "name": "earphones", "img": "./assets/shared/image-earphones.png", "className": "categories-img earphones" }
+      {
+        "name": "headphones",
+        "img": "./assets/shared/image-headphones.png",
+        "className": "categories-img headphones"
+      },
+      {
+        "name": "speakers",
+        "img": "./assets/shared/image-speakers.png",
+        "className": "categories-img speakers"
+      },
+      {
+        "name": "earphones",
+        "img": "./assets/shared/image-earphones.png",
+        "className": "categories-img earphones"
+      }
+    ]
+  },
+  {
+    "featured": [
+      {
+        "slug": "zx9-speaker",
+        "name": "ZX9 Speaker",
+        "description": "Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.",
+        "image": {
+          "mobile": "./assets/home/mobile/image-speaker-zx9.png",
+          "tablet": "./assets/home/tablet/image-speaker-zx9.png",
+          "desktop": "./assets/home/desktop/image-speaker-zx9.png"
+        }
+      },
+      {
+        "slug": "zx7-speaker",
+        "name": "ZX7 Speaker",
+        "description": "",
+        "image": {
+          "mobile": "./assets/home/mobile/image-speaker-zx7.jpg",
+          "tablet": "./assets/home/tablet/image-speaker-zx7.jpg",
+          "desktop": "./assets/home/desktop/image-speaker-zx7.jpg"
+        }
+      },
+      {
+        "slug": "yx1-earphones",
+        "name": "YX1 Earphones",
+        "description": "",
+        "image": {
+          "mobile": "./assets/home/mobile/image-earphones-yx1.jpg",
+          "tablet": "./assets/home/tablet/image-earphones-yx1.jpg",
+          "desktop": "./assets/home/desktop/image-earphones-yx1.jpg"
+        }
+      }
     ]
   }
 ]

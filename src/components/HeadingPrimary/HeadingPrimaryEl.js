@@ -7,4 +7,16 @@ export const HeadingPrimaryEl = styled.h1`
   letter-spacing: 2px;
   line-height: 5.8rem;
   margin-bottom: 2.5rem;
+
+  &.featured {
+    position: absolute;
+    right: 54px;
+    top: 133px;
+    max-width: 390px;
+    z-index: 1;
+
+    @media screen and (max-width: 1150px) {
+      position: static;
+    }
+  }
 `;
