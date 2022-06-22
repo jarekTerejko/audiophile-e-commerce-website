@@ -18,4 +18,13 @@ export const DescriptionTextEl = styled.p`
       position: static;
     }
   }
+
+  &.store-description {
+    color: var(--color-dark-grey);
+    max-width: 44.8rem;
+    letter-spacing: -0.4px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 0;
+  }
 `;
