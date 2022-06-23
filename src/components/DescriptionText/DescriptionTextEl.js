@@ -27,4 +27,14 @@ export const DescriptionTextEl = styled.p`
     line-height: 25px;
     margin-bottom: 0;
   }
+
+  &.footer {
+    max-width: 54rem;
+    line-height: 25px;
+  }
+
+  &.copyright {
+    word-spacing: 1px;
+    font-weight: 500;
+  }
 `;
