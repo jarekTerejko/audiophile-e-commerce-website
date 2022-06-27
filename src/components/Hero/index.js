@@ -10,7 +10,11 @@ const Hero = ({ data }) => {
   return (
     <>
       <HeroWrapper>
-        <HeroBg heroDesktopBg={data[6].hero.images.desktop}>
+        <HeroBg
+          heroDesktopBg={data[6].hero.images.desktop}
+          heroTabletBg={data[6].hero.images.tablet}
+          heroMobileBg={data[6].hero.images.mobile}
+        >
           <ContainerEl>
             <HeroContent>
               <IntroTextEl colorWhite>New product</IntroTextEl>

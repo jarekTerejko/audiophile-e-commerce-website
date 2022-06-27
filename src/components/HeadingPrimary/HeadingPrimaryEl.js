@@ -8,6 +8,10 @@ export const HeadingPrimaryEl = styled.h1`
   line-height: 5.8rem;
   margin-bottom: 2.5rem;
 
+  @media screen and (max-width: 500px) {
+    font-size: 36px;
+  }
+
   &.featured {
     position: absolute;
     right: 54px;
