@@ -13,6 +13,8 @@ import { ImageEl } from "../Image/ImageElement";
 import Logo from "../../assets/shared/desktop/logo.svg";
 import Cart from "../../assets/shared/desktop/icon-cart.svg";
 import Bars from "../../assets/shared/tablet/icon-hamburger.svg";
+import X from "../../assets/shared/tablet/icon-close.svg";
+import { useState } from "react";
 
 const Navbar = () => {
   const paths = [
@@ -22,19 +24,38 @@ const Navbar = () => {
     { name: "earphones", path: "earphones" },
   ];
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    if (isOpen) {
+      handleMenu();
+    } else {
+      return;
+    }
+  };
+
   return (
     <>
       <NavbarWrapper>
         <ContainerEl>
           <NavbarContent>
+            <NavbarMenutBtn onClick={handleMenu}>
+              <ImageEl src={isOpen ? X : Bars} style={{ maxWidth: "16px" }} />
+            </NavbarMenutBtn>
             <NavbarLinkR to="/">
               <ImageEl src={Logo} />
             </NavbarLinkR>
-            <NavbarNavItems>
+            <NavbarNavItems isOpen={isOpen}>
               {paths.map((item, i) => {
                 return (
                   <NavbarNavItem key={i}>
-                    <NavbarNavLink to={item.path}>{item.name}</NavbarNavLink>
+                    <NavbarNavLink to={item.path} onClick={closeMenu}>
+                      {item.name}
+                    </NavbarNavLink>
                   </NavbarNavItem>
                 );
               })}
@@ -42,9 +63,6 @@ const Navbar = () => {
             <NavbarCartBtn>
               <ImageEl src={Cart} />
             </NavbarCartBtn>
-            <NavbarMenutBtn>
-              <ImageEl src={Bars} />
-            </NavbarMenutBtn>
           </NavbarContent>
         </ContainerEl>
       </NavbarWrapper>
