@@ -16,7 +16,6 @@ const Categories = ({ data }) => {
       <CategoriesWrapper>
         <ContainerEl>
           <CategoriesContent>
-            {console.log(data.categories)}
             {data.categories.map((item, i) => {
               return (
                 <CategoriesCol key={i}>
