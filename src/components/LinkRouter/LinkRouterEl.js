@@ -31,5 +31,19 @@ export const LinkRouter = styled(Link)`
     left: 97px;
     right: unset;
     color: var(--color-black);
+
+    @media screen and (max-width: 768px) {
+      left: 62px;
+    }
+
+    @media screen and (max-width: 580px) {
+      left: 41px;
+    }
+  }
+
+  &.featured--row-three {
+    @media screen and (max-width: 880px) {
+      left: 41px;
+    }
   }
 `;

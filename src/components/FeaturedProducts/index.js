@@ -23,7 +23,9 @@ const FeaturedProducts = ({ data }) => {
           <FeaturedContent>
             <FeaturedRowOne
               PatternCircles={PatternCircles}
-              DesktopZX9SpeakerBg={data.featured[0].image.desktop}
+              desktopZX9SpeakerBg={data.featured[0].image.desktop}
+              tabletZX9SpeakerBg={data.featured[0].image.tablet}
+              mobileZX9SpeakerBg={data.featured[0].image.mobile}
             >
               <HeadingPrimaryEl className="featured">
                 {data.featured[0].name}
@@ -36,7 +38,9 @@ const FeaturedProducts = ({ data }) => {
               </LinkRouter>
             </FeaturedRowOne>
             <FeaturedRowTwo
-              DesktopZX7SpeakerBg={data.featured[1].image.desktop}
+              desktopZX7SpeakerBg={data.featured[1].image.desktop}
+              tabletZX7SpeakerBg={data.featured[1].image.tablet}
+              mobileZX7SpeakerBg={data.featured[1].image.mobile}
             >
               <HeadingSecondaryEl className="featured">
                 {data.featured[1].name}
@@ -50,15 +54,17 @@ const FeaturedProducts = ({ data }) => {
             </FeaturedRowTwo>
             <FeaturedRowThree>
               <FeaturedRowThreeColLeft
-                DesktopYX1EarphonesBg={data.featured[2].image.desktop}
+                desktopYX1EarphonesBg={data.featured[2].image.desktop}
+                tabletYX1EarphonesBg={data.featured[2].image.tablet}
+                mobileYX1EarphonesBg={data.featured[2].image.mobile}
               ></FeaturedRowThreeColLeft>
               <FeaturedRowThreeColRight>
-                <HeadingSecondaryEl className="featured">
+                <HeadingSecondaryEl className="featured featured--row-three">
                   {data.featured[2].name}
                 </HeadingSecondaryEl>
                 <LinkRouter
                   to={data.featured[2].slug}
-                  className="featured featured--bordered"
+                  className="featured featured--bordered featured--row-three"
                 >
                   see product
                 </LinkRouter>
