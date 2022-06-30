@@ -8,4 +8,8 @@ export const ContainerEl = styled.div`
   @media screen and (max-width: 768px) {
     padding: 0 4rem;
   }
+  
+  @media screen and (max-width: 375px) {
+    padding: 0 24px;
+  }
 `;
