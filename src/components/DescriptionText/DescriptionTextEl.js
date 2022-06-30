@@ -26,11 +26,19 @@ export const DescriptionTextEl = styled.p`
     font-weight: 500;
     line-height: 25px;
     margin-bottom: 0;
+
+    @media screen and (max-width: 768px) {
+      max-width: 58rem;
+    }
   }
 
   &.footer {
     max-width: 54rem;
     line-height: 25px;
+    
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
   }
 
   &.copyright {
