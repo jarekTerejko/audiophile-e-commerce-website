@@ -8,11 +8,16 @@ export const NavbarWrapper = styled.nav`
 
   @media screen and (max-width: 768px) {
     padding: 36px 0 33px 0;
-    min-height: 91px;
+    min-height: 90px;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     top: 0;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding: 32px 0;
+    min-height: 90px;
   }
 `;
 
@@ -33,13 +38,26 @@ export const NavbarContent = styled.div`
     @media screen and (max-width: 768px) {
       bottom: -37px;
     }
+
+    @media screen and (max-width: 375px) {
+      bottom: -33px;
+      width: calc(100% + 48px);
+      left: -24px;
+    }
   }
 `;
+
 export const NavbarLinkR = styled(Link)`
-  @media screen and (max-width: 768px) {
-    position: absolute;
-    left: 57px;
-    top: -4px;
+  &.navbar-link {
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      left: 57px;
+      top: -4px;
+    }
+
+    @media screen and (max-width: 768px) {
+      position: static;
+    }
   }
 `;
 
@@ -56,16 +74,22 @@ export const NavbarNavItems = styled.ul`
     transition: var(--transition);
     flex-direction: column;
     background: var(--color-dark);
-    height: calc(100vh - 91px);
+    height: calc(100vh - 90px);
     position: absolute;
     right: -40px;
-    top: 58px;
+    top: 54px;
     z-index: 1;
     width: calc(100% + 8rem);
     justify-content: center;
     align-items: center;
     transform: ${(props) =>
       props.isOpen ? `translateX(0)` : "translateX(100%)"};
+  }
+
+  @media screen and (max-width: 375px) {
+    top: 58px;
+    width: calc(100% + 48px);
+    right: -24px;
   }
 `;
 
@@ -85,10 +109,6 @@ export const NavbarNavLink = styled(NavLink)`
   color: var(--color-dark-white);
   font-weight: 500;
   padding: 0.4rem 0.5rem;
-
-  @media screen and (max-width: 768px) {
-    font-size: 1.6rem;
-  }
 `;
 
 export const NavbarCartBtn = styled.button`
@@ -98,6 +118,10 @@ export const NavbarCartBtn = styled.button`
   background: none;
   border: none;
   margin-top: -0.3rem;
+
+  @media screen and (max-width: 375px) {
+    margin-top: 3px;
+  }
 `;
 
 export const NavbarMenutBtn = styled.button`

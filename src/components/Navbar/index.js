@@ -46,7 +46,7 @@ const Navbar = () => {
             <NavbarMenutBtn onClick={handleMenu}>
               <ImageEl src={isOpen ? X : Bars} style={{ maxWidth: "16px" }} />
             </NavbarMenutBtn>
-            <NavbarLinkR to="/">
+            <NavbarLinkR to="/" className="navbar-link">
               <ImageEl src={Logo} />
             </NavbarLinkR>
             <NavbarNavItems isOpen={isOpen}>
