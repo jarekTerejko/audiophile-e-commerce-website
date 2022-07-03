@@ -7,6 +7,10 @@ export const CategoriesWrapper = styled.article`
   @media screen and (max-width: 768px) {
     margin-bottom: 96px;
   }
+
+  @media screen and (max-width: 375px) {
+    margin-bottom: 120px;
+  }
 `;
 
 export const CategoriesContent = styled.div`
@@ -17,10 +21,14 @@ export const CategoriesContent = styled.div`
   @media screen and (max-width: 768px) {
     column-gap: 10px;
   }
-  
+
   @media screen and (max-width: 640px) {
     grid-template-columns: 1fr;
     row-gap: 100px;
+  }
+
+  @media screen and (max-width: 375px) {
+    row-gap: 68px;
   }
 `;
 
