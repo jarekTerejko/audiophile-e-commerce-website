@@ -8,6 +8,10 @@ export const DescriptionTextEl = styled.p`
   margin-bottom: 4.2rem;
   opacity: 0.8;
 
+  @media screen and (max-width: 375px) {
+    margin-bottom: 29px;
+  }
+
   &.featured {
     position: absolute;
     right: 74px;
@@ -16,6 +20,10 @@ export const DescriptionTextEl = styled.p`
 
     @media screen and (max-width: 1150px) {
       position: static;
+    }
+
+    @media screen and (max-width: 375px) {
+      margin-bottom: 25px;
     }
   }
 
@@ -35,7 +43,7 @@ export const DescriptionTextEl = styled.p`
   &.footer {
     max-width: 54rem;
     line-height: 25px;
-    
+
     @media screen and (max-width: 768px) {
       max-width: 100%;
     }
