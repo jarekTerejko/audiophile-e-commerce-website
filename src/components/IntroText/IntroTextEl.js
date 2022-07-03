@@ -7,4 +7,8 @@ export const IntroTextEl = styled.h4`
   text-transform: uppercase;
   font-size: 1.4rem;
   margin-bottom: 2.4rem;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 17px;
+  }
 `;
