@@ -12,6 +12,15 @@ export const HeadingPrimaryEl = styled.h1`
     font-size: 36px;
   }
 
+  @media screen and (max-width: 375px) {
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+
+  @media screen and (max-width: 340px) {
+   font-size: 2.4rem;
+  }
+
   &.featured {
     position: absolute;
     right: 54px;
@@ -21,6 +30,10 @@ export const HeadingPrimaryEl = styled.h1`
 
     @media screen and (max-width: 1150px) {
       position: static;
+    }
+    
+    @media screen and (max-width: 375px) {
+      padding: 0px 18px;
     }
   }
 `;
