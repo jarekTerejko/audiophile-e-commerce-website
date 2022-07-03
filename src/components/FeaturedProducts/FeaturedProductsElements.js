@@ -2,9 +2,12 @@ import styled from "styled-components";
 
 export const FeaturedWrapper = styled.section`
   margin-bottom: 20rem;
-  
+
   @media screen and (max-width: 768px) {
     margin-bottom: 96px;
+  }
+  @media screen and (max-width: 375px) {
+    margin-bottom: 120px;
   }
 `;
 
@@ -14,6 +17,10 @@ export const FeaturedContent = styled.div`
 
   @media screen and (max-width: 768px) {
     gap: 32px;
+  }
+
+  @media screen and (max-width: 375px) {
+    gap: 24px;
   }
 `;
 
@@ -42,6 +49,11 @@ export const FeaturedRowOne = styled.div`
     padding-right: 24px;
   }
 
+  @media screen and (max-width: 580px) {
+    padding-top: 295px;
+    padding-bottom: 55px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -62,6 +74,11 @@ export const FeaturedRowOne = styled.div`
 
     @media screen and (max-width: 768px) {
       background-position-y: -288px;
+    }
+
+    @media screen and (max-width: 375px) {
+      background-size: 558px;
+      background-position-y: -121px;
     }
   }
 
@@ -89,6 +106,13 @@ export const FeaturedRowOne = styled.div`
       background-size: 182px;
       background-position-y: 61px;
     }
+
+    @media screen and (max-width: 375px) {
+      background-image: ${({ mobileZX9SpeakerBg }) =>
+        mobileZX9SpeakerBg ? `url(${mobileZX9SpeakerBg})` : `url('')`};
+      background-size: 160px;
+      background-position-y: 62px;
+    }
   }
 `;
 
@@ -106,18 +130,29 @@ export const FeaturedRowTwo = styled.div`
     background-image: ${({ tabletZX7SpeakerBg }) =>
       tabletZX7SpeakerBg ? `url(${tabletZX7SpeakerBg})` : `url('')`};
   }
+
+  @media screen and (max-width: 375px) {
+    background-image: ${({ mobileZX7SpeakerBg }) =>
+      mobileZX7SpeakerBg ? `url(${mobileZX7SpeakerBg})` : `url('')`};
+  }
 `;
 
 export const FeaturedRowThree = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
+
   @media screen and (max-width: 768px) {
     column-gap: 12px;
   }
+
   @media screen and (max-width: 580px) {
     row-gap: 12px;
     grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 580px) {
+    row-gap: 24px;
   }
 `;
 
@@ -134,6 +169,12 @@ export const FeaturedRowThreeColLeft = styled.div`
     background-image: ${({ tabletYX1EarphonesBg }) =>
       tabletYX1EarphonesBg ? `url(${tabletYX1EarphonesBg})` : `url('')`};
   }
+
+  @media screen and (max-width: 375px) {
+    background-image: ${({ mobileYX1EarphonesBg }) =>
+      mobileYX1EarphonesBg ? `url(${mobileYX1EarphonesBg})` : `url('')`};
+    min-height: 20rem;
+  }
 `;
 
 export const FeaturedRowThreeColRight = styled.div`
@@ -143,5 +184,9 @@ export const FeaturedRowThreeColRight = styled.div`
 
   @media screen and (max-width: 580px) {
     min-height: 32rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    min-height: 20rem;
   }
 `;

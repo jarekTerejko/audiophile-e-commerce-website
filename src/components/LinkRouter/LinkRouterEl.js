@@ -39,11 +39,19 @@ export const LinkRouter = styled(Link)`
     @media screen and (max-width: 580px) {
       left: 41px;
     }
+
+    @media screen and (max-width: 375px) {
+      left: 25px;
+    }
   }
 
   &.featured--row-three {
     @media screen and (max-width: 880px) {
       left: 41px;
+    }
+    @media screen and (max-width: 375px) {
+      left: 25px;
+      top: 111px;
     }
   }
 `;
