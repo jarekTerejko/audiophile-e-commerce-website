@@ -9,6 +9,10 @@ export const HeroWrapper = styled.header`
     margin-top: 0;
     margin-bottom: 148px;
   }
+
+  @media screen and (max-width: 375px) {
+    margin-bottom: 92px;
+  }
 `;
 
 export const HeroBg = styled.div`
@@ -25,6 +29,12 @@ export const HeroBg = styled.div`
     background-image: ${({ heroTabletBg }) =>
       heroTabletBg ? `url(${heroTabletBg})` : `url('')`};
   }
+
+  @media screen and (max-width: 375px) {
+    background-image: ${({ heroMobileBg }) =>
+      heroMobileBg ? `url(${heroMobileBg})` : `url('')`};
+    min-height: 60rem;
+  }
 `;
 
 export const HeroContent = styled.div`
@@ -38,5 +48,9 @@ export const HeroContent = styled.div`
     margin: 0 auto;
     text-align: center;
     padding-top: 216px;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding-top: 198px;
   }
 `;
