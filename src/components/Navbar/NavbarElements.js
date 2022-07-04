@@ -37,6 +37,7 @@ export const NavbarContent = styled.div`
 
     @media screen and (max-width: 768px) {
       bottom: -37px;
+      bottom: -33px;
     }
 
     @media screen and (max-width: 375px) {
@@ -74,10 +75,10 @@ export const NavbarNavItems = styled.ul`
     transition: var(--transition);
     flex-direction: column;
     background: var(--color-dark);
-    height: calc(100vh - 90px);
+    height: calc(100vh - 94px);
     position: absolute;
     right: -40px;
-    top: 54px;
+    top: 58px;
     z-index: 1;
     width: calc(100% + 8rem);
     justify-content: center;
@@ -87,9 +88,9 @@ export const NavbarNavItems = styled.ul`
   }
 
   @media screen and (max-width: 375px) {
-    top: 58px;
     width: calc(100% + 48px);
     right: -24px;
+    height: calc(100vh - 90px);
   }
 `;
 
