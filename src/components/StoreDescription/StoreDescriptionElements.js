@@ -6,6 +6,10 @@ export const StoreDescriptionWrapper = styled.section`
   @media screen and (max-width: 768px) {
     margin-bottom: 96px;
   }
+  
+  @media screen and (max-width: 375px) {
+    margin-bottom: 120px;
+  }
 `;
 
 export const StoreDescriptionContent = styled.div`
@@ -29,6 +33,10 @@ export const StoreDescriptionContentColLeft = styled.div`
     text-align: center;
     margin-top: 63px;
   }
+
+  @media screen and (max-width: 375px) {
+    margin-top: 40px;
+  }
 `;
 
 export const StoreDescriptionContentColRight = styled.div`
@@ -49,6 +57,12 @@ export const StoreDescriptionHeading = styled.h2`
 
   @media screen and (max-width: 768px) {
     max-width: 52rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 28px;
+    word-spacing: 0px;
+    line-height: 38px;
   }
 `;
 
