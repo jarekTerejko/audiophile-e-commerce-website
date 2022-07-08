@@ -5,6 +5,23 @@ export const HeadingSecondaryEl = styled.h2`
   font-weight: 700;
   letter-spacing: 2px;
 
+  &.product-intro {
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 46px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 768px) {
+      max-width: 30rem;
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    @media screen and (max-width: 300px) {
+      font-size: 28px;
+    }
+  }
+
   &.featured {
     position: absolute;
     text-transform: uppercase;

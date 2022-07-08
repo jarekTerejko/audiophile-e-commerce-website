@@ -8,6 +8,10 @@ export const DescriptionTextEl = styled.p`
   margin-bottom: 4.2rem;
   opacity: 0.8;
 
+  &.product-intro {
+    color: var(--color-dark-grey);
+  }
+
   @media screen and (max-width: 375px) {
     margin-bottom: 29px;
   }
