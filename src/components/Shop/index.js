@@ -21,7 +21,7 @@ const Categories = ({ data }) => {
                 <CategoriesCol key={i}>
                   <ImageEl src={item.img} className={`${item.className}`} />
                   <CategoriesName>{item.name}</CategoriesName>
-                  <CategoriesLink to={item.name}>
+                  <CategoriesLink to={`/${item.name}`}>
                     shop
                     <ImageEl src={ArrowRight} />
                   </CategoriesLink>

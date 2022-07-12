@@ -7,7 +7,7 @@ import NotFound from "../components/NotFound";
 import Categories from "../components/Shop";
 import StoreDescription from "../components/StoreDescription";
 
-const Headphones = () => {
+const Speakers = () => {
   const location = useLocation();
 
   const { data, isLoading, fetchErrorValue, fetchError } =
@@ -29,4 +29,4 @@ const Headphones = () => {
   );
 };
 
-export default Headphones;
+export default Speakers;

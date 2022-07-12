@@ -13,13 +13,14 @@ import {
   ProductsIntroImgMobile,
 } from "./ProductsIntroElements";
 
-const ProductsIntro = ({ data }) => {
-  const headphones = data.filter((item) => item.category === "headphones");
+const ProductsIntro = ({ data, location }) => {
+  const items = data.filter((item) => item.category === location);
+  console.log(location);
   return (
     <>
       <ProductsIntroWrapper>
         <ContainerEl>
-          {headphones
+          {items
             .sort((a, b) => Number(b.new) - Number(a.new))
             .map((item, i) => {
               return (
