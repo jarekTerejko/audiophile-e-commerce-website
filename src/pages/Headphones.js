@@ -1,13 +1,15 @@
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import CategoryHeader from "../components/CategoryHeader";
 import ProductsIntro from "../components/ProductsIntro";
 import useFetch from "../useFetch";
 import Loader from "../components/Loader";
 import NotFound from "../components/NotFound";
+import Categories from "../components/Shop";
+import StoreDescription from "../components/StoreDescription";
 
 const Headphones = () => {
   const location = useLocation();
-  
+
   const { data, isLoading, fetchErrorValue, fetchError } =
     useFetch("../data.json");
 
@@ -19,6 +21,8 @@ const Headphones = () => {
         <>
           <CategoryHeader location={location.pathname} />
           <ProductsIntro data={data[0]} />
+          <Categories data={data[0][7]} />
+          <StoreDescription data={data[0][9]} />
         </>
       )}
     </>

@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-export const ProductsIntroWrapper = styled.section``;
+export const ProductsIntroWrapper = styled.section`
+  margin-bottom: 20rem;
+`;
+
 export const ProductsIntroContent = styled.div``;
 export const ProductsIntroColsWrapper = styled.article`
   display: grid;
