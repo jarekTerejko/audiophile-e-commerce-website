@@ -15,7 +15,7 @@ import {
 
 const ProductsIntro = ({ data, location }) => {
   const items = data.filter((item) => item.category === location);
-  console.log(location);
+
   return (
     <>
       <ProductsIntroWrapper>

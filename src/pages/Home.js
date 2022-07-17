@@ -9,7 +9,7 @@ import StoreDescription from "../components/StoreDescription";
 const Home = () => {
   const { data, isLoading, fetchErrorValue, fetchError } =
     useFetch("../data.json");
-  console.log(data[0]);
+  // console.log(data[0]);
   return (
     <>
       {isLoading ? <Loader /> : null}

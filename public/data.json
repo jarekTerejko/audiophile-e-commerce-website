@@ -4,9 +4,9 @@
     "slug": "yx1-earphones",
     "name": "YX1 Wireless Earphones",
     "image": {
-      "mobile": "./assets/product-yx1-earphones/mobile/image-product.jpg",
-      "tablet": "./assets/product-yx1-earphones/tablet/image-product.jpg",
-      "desktop": "./assets/product-yx1-earphones/desktop/image-product.jpg"
+      "mobile": "./assets/category-earphones/mobile/image-yx1-earphones.jpg",
+      "tablet": "./assets/category-earphones/tablet/image-yx1-earphones.jpg",
+      "desktop": "./assets/category-earphones/desktop/image-yx1-earphones.jpg"
     },
     "category": "earphones",
     "new": true,
@@ -328,9 +328,9 @@
     "slug": "zx7-speaker",
     "name": "ZX7 Speaker",
     "image": {
-      "mobile": "./assets/product-zx7-speaker/mobile/image-product.jpg",
-      "tablet": "./assets/product-zx7-speaker/tablet/image-product.jpg",
-      "desktop": "./assets/product-zx7-speaker/desktop/image-product.jpg"
+      "mobile": "./assets/category-speakers/mobile/image-zx7.jpg",
+      "tablet": "./assets/category-speakers/tablet/image-zx7.jpg",
+      "desktop": "./assets/category-speakers/desktop/image-zx7.jpg"
     },
     "category": "speakers",
     "new": false,
@@ -411,9 +411,9 @@
     "slug": "zx9-speaker",
     "name": "ZX9 Speaker",
     "image": {
-      "mobile": "./assets/product-zx9-speaker/mobile/image-product.jpg",
-      "tablet": "./assets/product-zx9-speaker/tablet/image-product.jpg",
-      "desktop": "./assets/product-zx9-speaker/desktop/image-product.jpg"
+      "mobile": "./assets/category-speakers/mobile/image-zx9.jpg",
+      "tablet": "./assets/category-speakers/tablet/image-zx9.jpg",
+      "desktop": "./assets/category-speakers/desktop/image-zx9.jpg"
     },
     "category": "speakers",
     "new": true,
