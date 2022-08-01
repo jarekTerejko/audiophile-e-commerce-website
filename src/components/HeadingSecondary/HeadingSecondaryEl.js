@@ -65,4 +65,19 @@ export const HeadingSecondaryEl = styled.h2`
       font-size: 1.8rem;
     }
   }
+
+  &.product-hero {
+    line-height: 44px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-bottom: 33px;
+  }
+
+  &.product-details {
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 28px;
+  }
 `;

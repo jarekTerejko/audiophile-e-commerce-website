@@ -9,6 +9,10 @@ export const IntroTextEl = styled.h4`
   font-size: 1.4rem;
   margin-bottom: 2.4rem;
 
+  &.product-hero {
+    margin-bottom: 15px;
+  }
+
   @media screen and (max-width: 768px) {
     margin-bottom: 17px;
   }

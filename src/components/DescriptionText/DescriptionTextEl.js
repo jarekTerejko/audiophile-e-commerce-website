@@ -57,4 +57,17 @@ export const DescriptionTextEl = styled.p`
     word-spacing: 1px;
     font-weight: 500;
   }
+
+  &.product-hero {
+    max-width: 100%;
+    margin-bottom: 31px;
+    line-height: 25px;
+  }
+
+  &.product-details {
+    color: var(--color-dark-grey);
+    max-width: 640px;
+    margin-bottom: 25px;
+    line-height: 25px;
+  }
 `;
