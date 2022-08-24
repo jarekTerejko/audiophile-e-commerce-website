@@ -42,7 +42,7 @@ const ProductsIntro = ({ data, location }) => {
                     <DescriptionTextEl className="product-intro">
                       {item.description}
                     </DescriptionTextEl>
-                    <LinkRouter to={item.slug}>see product</LinkRouter>
+                    <LinkRouter to={`/${item.slug}`}>see product</LinkRouter>
                   </ProductsIntroColText>
                 </ProductsIntroColsWrapper>
               );
