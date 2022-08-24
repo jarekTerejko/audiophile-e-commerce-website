@@ -11,6 +11,7 @@ import {
 
 const ProductOthers = ({ data, location }) => {
   const product = data.filter((item) => item.slug === location);
+
   return (
     <>
       <ProductOthersWrapper>
@@ -20,7 +21,11 @@ const ProductOthers = ({ data, location }) => {
             {product[0].others.map((item, i) => {
               return (
                 <ProductOthersCol key={i}>
-                  <ProductOthersImgContainer imgDesktop={item.image.desktop} />
+                  <ProductOthersImgContainer
+                    imgDesktop={item.image.desktop}
+                    imgTablet={item.image.tablet}
+                    imgMobile={item.image.mobile}
+                  />
                   <ProductOthersItemName>{item.name}</ProductOthersItemName>
                   <LinkRouter to={`/${item.slug}`}>See product</LinkRouter>
                 </ProductOthersCol>

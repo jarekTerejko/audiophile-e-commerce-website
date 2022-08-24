@@ -24,7 +24,6 @@ import {
 
 const ProductHero = ({ data, location, addItem }) => {
   const product = data.filter((item) => item.slug === location);
-  console.log(product);
   const [quantity, setQuantity] = useState(1);
 
   const increaseQuantity = () => {
@@ -36,9 +35,7 @@ const ProductHero = ({ data, location, addItem }) => {
 
   useEffect(() => {
     setQuantity(1);
-
     // return () => {
-    //   second
     // }
   }, [location]);
 

@@ -16,12 +16,18 @@ const ProductGallery = ({ data, location }) => {
           <ProductGalleryInnerWrapper>
             <ProductGalleryImgOne
               ImgDesktop={product[0].gallery.first.desktop}
+              ImgTablet={product[0].gallery.first.tablet}
+              ImgMobile={product[0].gallery.first.mobile}
             />
             <ProductGalleryImgTwo
               ImgDesktop={product[0].gallery.second.desktop}
+              ImgTablet={product[0].gallery.second.tablet}
+              ImgMobile={product[0].gallery.second.mobile}
             />
             <ProductGalleryImgThree
               ImgDesktop={product[0].gallery.third.desktop}
+              ImgTablet={product[0].gallery.third.tablet}
+              ImgMobile={product[0].gallery.third.mobile}
             />
           </ProductGalleryInnerWrapper>
         </ContainerEl>

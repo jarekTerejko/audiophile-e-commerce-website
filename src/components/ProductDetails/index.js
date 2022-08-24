@@ -13,6 +13,7 @@ import {
 
 const ProductDetails = ({ data, location }) => {
   const product = data.filter((item) => item.slug === location);
+
   return (
     <>
       <ProductDetailsWrapper>
@@ -29,7 +30,6 @@ const ProductDetails = ({ data, location }) => {
                   </DescriptionTextEl>
                 );
               })}
-              <DescriptionTextEl className="product-details"></DescriptionTextEl>
             </ProductDetailsColLeft>
             <ProductDetailsColRight>
               <HeadingSecondaryEl className="product-details">
