@@ -1,6 +1,7 @@
 import { ContainerEl } from "../Container/ContainerElement";
 import {
   NavbarCartBtn,
+  NavbarCartItemsQuantity,
   NavbarContent,
   NavbarLinkR,
   NavbarMenutBtn,
@@ -16,7 +17,11 @@ import Bars from "../../assets/shared/tablet/icon-hamburger.svg";
 import X from "../../assets/shared/tablet/icon-close.svg";
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({
+  cartItems,
+  isCartVisible,
+  handleCart
+}) => {
   const paths = [
     { name: "home", path: "/" },
     { name: "headphones", path: "headphones" },
@@ -46,7 +51,7 @@ const Navbar = () => {
             <NavbarMenutBtn onClick={handleMenu}>
               <ImageEl src={isOpen ? X : Bars} style={{ maxWidth: "16px" }} />
             </NavbarMenutBtn>
-            <NavbarLinkR to="/" className="navbar-link">
+            <NavbarLinkR to="/" className="navbar-link" onClick={closeMenu}>
               <ImageEl src={Logo} />
             </NavbarLinkR>
             <NavbarNavItems isOpen={isOpen}>
@@ -60,8 +65,18 @@ const Navbar = () => {
                 );
               })}
             </NavbarNavItems>
-            <NavbarCartBtn>
+            <NavbarCartBtn isCartVisible={isCartVisible} onClick={handleCart}>
               <ImageEl src={Cart} />
+              {cartItems.length > 0 && (
+                <NavbarCartItemsQuantity>
+                  {cartItems.reduce((acc, curr) => {
+                    if (curr) {
+                      acc += curr.quantity;
+                    }
+                    return acc;
+                  }, 0)}
+                </NavbarCartItemsQuantity>
+              )}
             </NavbarCartBtn>
           </NavbarContent>
         </ContainerEl>

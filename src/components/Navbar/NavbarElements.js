@@ -5,13 +5,13 @@ export const NavbarWrapper = styled.nav`
   padding: 3.5rem 0 3.7rem 0;
   background: var(--color-dark);
   position: relative;
+  z-index: 3;
 
   @media screen and (max-width: 768px) {
     padding: 36px 0 33px 0;
     min-height: 90px;
     position: fixed;
     width: 100%;
-    z-index: 2;
     top: 0;
   }
 
@@ -119,10 +119,26 @@ export const NavbarCartBtn = styled.button`
   background: none;
   border: none;
   margin-top: -0.3rem;
+  position: relative;
+  cursor: pointer;
 
   @media screen and (max-width: 375px) {
     margin-top: 3px;
   }
+`;
+
+export const NavbarCartItemsQuantity = styled.span`
+  background: var(--color-orange);
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 50%;
+  color: var(--color-white);
+  position: absolute;
+  top: -8px;
+  left: 14px;
+  font-size: 12px;
+  font-weight: 700;
 `;
 
 export const NavbarMenutBtn = styled.button`
