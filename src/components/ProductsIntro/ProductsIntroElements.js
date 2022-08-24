@@ -52,6 +52,7 @@ export const ProductsIntroColText = styled.div`
 `;
 
 export const ProductsIntroImgDesktop = styled.img`
+  border-radius: 5px;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -62,10 +63,12 @@ export const ProductsIntroImgTablet = styled.img`
 
   @media screen and (min-width: 376px) and (max-width: 768px) {
     display: block;
+    border-radius: 5px;
   }
 `;
 
 export const ProductsIntroImgMobile = styled.img`
+  border-radius: 5px;
   @media screen and (min-width: 376px) {
     display: none;
   }
